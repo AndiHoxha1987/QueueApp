@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.autochthonoustech.makefor.CreateNewQueueActivity">
+
+    <include
+        android:id="@+id/create_queue_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+
+    <Button
+        android:id="@+id/create_queue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_queue_toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/buttons"
+        android:padding="6dp"
+        android:text="@string/create_new_queue"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/set_queue_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_queue_button"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputs"
+        android:textCursorDrawable="@android:color/black"
+        android:hint="@string/queue_name"
+        android:inputType="textMultiLine"
+        android:padding="6dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/set_queue_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_queue_name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/inputs"
+        android:textCursorDrawable="@android:color/black"
+        android:hint="@string/enter_an_id_code"
+        android:inputType="textMultiLine"
+        android:padding="6dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:importantForAutofill="no" />
+
+</RelativeLayout>

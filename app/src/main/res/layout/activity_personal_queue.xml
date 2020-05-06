@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.autochthonoustech.makefor.PersonalQueueActivity">
+
+    <include
+        android:id="@+id/personal_queue_activity_bar"
+        layout="@layout/app_bar_layout">
+    </include>
+    <TextView
+        android:id="@+id/personal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_queue_activity_bar"
+        android:maxLines="2"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorBlack"
+        android:padding="5dp"
+        android:textSize="60sp"/>
+    <TextView
+        android:id="@+id/personal_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_name"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorBlack"
+        android:padding="5dp"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/personal_queue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/personal_status"
+        android:background="@drawable/personal_number"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorAccent"
+        android:padding="25dp"
+        android:textSize="180sp"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7551305012895219/5003760847">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:title="@string/create_new_queue"
+        android:id="@+id/create_queue"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:title="@string/settings"
+        android:id="@+id/main_settings_option"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/main_logout_option"
+        android:title="@string/log_out"
+        app:showAsAction="never">
+
+    </item>
+</menu>
