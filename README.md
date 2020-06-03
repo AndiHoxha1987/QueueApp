@@ -25,3 +25,19 @@ Covered topics are:
 - Queue admin can only delete from Queue first user in queue
 - Queue admin can delete also all the users in the queue with one command if it is no more time and if there are still some users in it
 
+Features:
+- RecyclerView, Adapter, Tab Layout, Custom Appbar
+- RecycleView.ItemTouchHelper(Swipe item to delete)
+- Authentication with email or phone number
+- Getting Device Token
+- Login and Logout Activities
+- Delete Account
+- Retrieve new password
+- Firebase Authentication, RealTime Database, 
+- Update user profile
+- Offline data 
+- Searching by name or code
+- Ads implementation
+- Intent
+- Fragment
+- Model
